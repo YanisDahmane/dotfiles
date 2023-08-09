@@ -61,4 +61,9 @@
   defaultBranch = master
 [user]
 	email = yanis.dahmane.pro@gmail.com
-	name = Yanis Dahmane
+	name = yanis dahmane
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
